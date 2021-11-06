@@ -38,10 +38,10 @@ turtle.penup()
 # color, loop to produce each object
 list = []
 distanceList = []
-colorlist = ['red', 'blue', 'purple', 'black', 'orange']
-namelist = ['Peter', 'Karen', 'Jimmy', 'Lisa', 'Giuliet']
+colorlist = ['red', 'blue', 'purple', 'black', 'orange'] #indicates ice-cream brand
+namelist = ['Peter', 'Karen', 'Jimmy', 'Lisa', 'Juliet']
 
-def distance(a, a2, b, b2):
+def distance(a, a2, b, b2): #distance calculation
     d = math.hypot(a2 - a, b2 - b)
     return d
 
@@ -69,7 +69,7 @@ for j in list:
 
 list_array = np.array(distanceList)
 n = len(list_array)
-for r in range(len(list)):
+for r in range(len(list)): #distance comparison
 
     x1 = list_array[r][0] # 0,0
     y1 = list_array[r][1]  # 0,1
